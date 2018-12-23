@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: __APP_NAME__-dc
+  labels:
+    app: __APP_NAME__
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: __APP_NAME__
+        updateTimestamp: "__TIMESTAMP__"
+    spec:
+      containers:
+      - name: __APP_NAME__-ctr
+        image: >-
+          __IMAGE__
+        env:
+        - name: DEPLOY_TIMESTAMP
+          value: "__TIMESTAMP__"
+        imagePullPolicy: Always
+        ports:
+        - name: http-port
+          containerPort: 8000
+
+

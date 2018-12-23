@@ -1,0 +1,11 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: __APP_NAME__
+    updateTimestamp: "__TIMESTAMP__"
+  name: __APP_NAME__-ingress
+spec:
+  backend:
+    serviceName: __APP_NAME__-svc
+    servicePort: http-port

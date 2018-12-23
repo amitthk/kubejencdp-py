@@ -1,0 +1,7 @@
+[RHEL]
+name=RED HAT Linux 7.4(x86_64)
+baseurl=https://cdn.redhat.com/content/eus/rhel/server/7/$releasever/$basearch/rh-common/os
+gpgkey=file:///etc/pki/rpm-gpg/VMWARE-RPM-GPG-KEY
+gpgcheck=0
+enabled=1
+skip_if_unavailable=True

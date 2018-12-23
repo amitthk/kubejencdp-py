@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: __APP_NAME__
+    updateTimestamp: "__TIMESTAMP__"
+  name: __APP_NAME__-svc
+spec:
+  ports:
+    - name: http-port
+      port: 8000
+      protocol: TCP
+      targetPort: 8000
+  selector:
+    app: __APP_NAME__
+  sessionAffinity: None
+  type: NodePort
