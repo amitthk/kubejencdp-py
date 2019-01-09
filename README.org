@@ -2,4 +2,4 @@
 This source code is part of article with above title at dzone. For further information please follow the link:
 
 #+ATTR_HTML: :target _blank
-[[https://dzone.com/articles/setting-up-jenkins-cicd-for-python-flask-docker-ap]][[CI/CD Pipelines for Python (Flask) — Docker Project to Kubernetes]]
+[[https://dzone.com/articles/setting-up-jenkins-cicd-for-python-flask-docker-ap]]
